@@ -49,6 +49,8 @@
 
 .cont{
     display: flex;
+    padding: 40px;
+    border-top: 3px solid #1e61ac;
 }
 
 .core{
@@ -81,6 +83,12 @@
     font-family: 'Odibee Sans', cursive;
     
 }
+.aboutheading{
+    color: #14a9e6;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 10px #000;
+
+}
 
 .carousel-inner img{
     width: 100%;
@@ -108,8 +116,14 @@
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #008CBA;
+    background-color: #9fb8c0;
   }
+.card :hover{
+    opacity: 2;
+}
+.aboutbody{
+    padding: 30px;
+}   
 
 .wrap{
     padding: 40px
@@ -126,7 +140,35 @@
     transform: translate(-50%, -50%);
     text-align: center;
   }
-
+.abouthero{
+    background-attachment: fixed;
+    background-image: url(/images/ocean.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 230px;
+    object-fit: contain;
+}  
+.offerhero{
+    background-attachment: fixed;
+    background-image: url(/images/Safari-GettyImages.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 230px;
+    object-fit: contain;
+}
+.vertical-center{
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    margin-left: 80px;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: #14a9e6;
+    text-transform: uppercase;
+    font-size: 500%;
+    text-shadow: 1px 1px 10px #000;
+    font-family: 'Odibee Sans', cursive;
+  }
 
 /* For 1366 Resolution */  
 @media only screen   
@@ -140,6 +182,7 @@ and (max-width: 1605px)
         -ms-transform: translateY(-50%);
         -webkit-transform: translateY(-50%);
         transform: translateY(-50%);
+        font-size: 20px;
     }
     .top-bar{
         height: 40px;
@@ -154,5 +197,18 @@ and (max-width: 575px)
     .card{
         margin-top: 15px;
     }
+    .vertical-center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        color: #14a9e6;
+        text-transform: uppercase;
+        font-size: 500%;
+        text-shadow: 1px 1px 10px #000;
+        font-family: 'Odibee Sans', cursive;
+      }
+    
     
 }  
