@@ -156,6 +156,23 @@
     height: 230px;
     object-fit: contain;
 }
+
+.offerhero2{
+    background-attachment: fixed;
+    background-image: url(/images/hero2.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 230px;
+    object-fit: contain;
+}
+.contacthero{
+    background-attachment: fixed;
+    background-image: url(/images/contacthero.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 230px;
+    object-fit: contain;
+}
 .vertical-center{
     margin: 0;
     position: absolute;
@@ -211,6 +228,9 @@ and (max-width: 575px)
       }
       .top-bar{
           display: flex;
+      }
+      .downlogo{
+          padding-bottom: 11px;
       }
      
     
