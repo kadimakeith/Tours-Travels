@@ -187,6 +187,54 @@
     font-family: 'Odibee Sans', cursive;
   }
 
+.iata{
+    width: 130px;
+    height: 130px;
+}
+
+.cp2{
+    animation: slide2 12s linear infinite
+}
+
+.ci{
+    margin-top: 50px;
+}
+
+.testimonial {
+    background-color: #ededed;
+    height: 300px;
+    margin: 30px auto;
+  }
+  
+  .testimonial-item {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .testimonial-item .fa {
+    font-size: 3rem;
+  }
+
+  .vision-mission{
+      display: flex;
+  }
+
+
+.cp{
+    animation : slide 13s linear infinite;
+}
+@keyframes slide {
+   
+    100% {
+        transform: translateX(-66.6666%);
+    }
+  }
+  @keyframes slide2 {
+   
+    100% {
+        transform: translateX(66.6666%);
+    }
+  }  
 /* For 1366 Resolution */  
 @media only screen   
 and (min-width: 1030px)   
@@ -233,6 +281,9 @@ and (max-width: 575px)
           padding-bottom: 11px;
       }
      
+      .vision-mission{
+          flex-direction: column;
+      }
     
     
 }  

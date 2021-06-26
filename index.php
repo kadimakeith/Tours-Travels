@@ -40,7 +40,7 @@
   <nav class='navbar navbar-expand-md navbar-light bg-white sticky-top'>
 
     <div class="container-fluid">
-       <a class="navbar-brand"><img src ='./images/Madrone_logo.png' class ='img-fluid logo'/></a>
+       <a class="navbar-brand" href='index.html'><img src ='./images/Madrone_logo.png' class ='img-fluid logo'/></a>
        <button class='navbar-toggler' data-toggle='collapse' type='button' data-target='#collapse_target'>
            <span class="navbar-toggler-icon navbutton"></span>
            
@@ -57,7 +57,7 @@
                    <a href="offer.html" class="nav-link">What we offer</a>
                </li>
                <li class="nav-item">
-                   <a href="contact.html" class="nav-link">Contact us</a>
+                   <a href="contact.php" class="nav-link">Contact us</a>
                </li>
            </ul>
        </div>    
@@ -70,7 +70,6 @@
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -81,22 +80,14 @@
             <a href='offer.html'><button type='button' class='btn btn-outline-light '>What we offer</button></a>
           </div>
         </div>
-        <div class="carousel-item">
-          <img class='img-fluid' src="./images/safari2.jpg" alt="Second slide">
-          <div class="carousel-caption">
-            <h1 class="display1">Madrone Tours & Travel</h1>
-            <a href='about.html'><button type='button' class='btn btn-outline-light '>Who we are</button></a>
-            <a href='offer.html'><button type='button' class='btn btn-outline-light '>What we offer</button></a>
-          </div> 
-        </div>
-        <div class="carousel-item">
+      <div class="carousel-item">
           <img class='img-fluid' src="./images/safari3.jpg" alt="Third slide">
           <div class="carousel-caption">
             <h1 class="display1">Madrone Tours & Travel</h1>
             <a href='about.html'><button type='button' class='btn btn-outline-light '>Who we are</button></a>
             <a href='offer.html'><button type='button' class='btn btn-outline-light '>What we offer</button></a>
           </div>
-        </div>
+      </div>
         <div class="carousel-item">
           <img class='img-fluid' src="./images/hero.jpg" alt="fourth slide">
           <div class="carousel-caption">
@@ -118,22 +109,78 @@
 
 <!--Membership-->
     <div class="container">
-        <h3 class="text-center">Patnerships</h3>
+        <h3 class="text-center">Partnerships</h3>
     </div>
     <div class="multiple-items">
-        <div>
-            <img src="./images/KWSS_2_1.png" alt="KWS">
-        </div>
-        <div>
-            <img src="./images/Magical-kenya-tourism-identity.png" alt="Magical Kenya">
-        </div>
-        <div>
-            <img src="./images/NatureKenya-Logo-125.png" alt="Nature Kenya">
-        </div>
-        <div>
-            <img src="./images/ASTA.png" alt="ASTA">
-        </div>
+      <div>
+          <img  class ='cp' src="./images/KWSS_2_1.png" alt="KWS">
+      </div>
+      <div>
+          <img  class ='cp' src="./images/Magical-kenya-tourism-identity.png" alt="Magical Kenya">
+      </div>
+      <div>
+          <img  class ='cp' src="./images/NatureKenya-Logo-125.png" alt="Nature Kenya">
+      </div>
+      <div>
+          <img  class ='cp' src="./images/ASTA.png" alt="ASTA">
+      </div>
+      
     </div>
+    <div class="row">
+      
+      <div class="col-md-12">
+        <img class='cp2' src="./images/partners.png"> 
+      </div>   
+           
+      </div>
+
+
+      <div class="container testimonial">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          
+          <div class="carousel-inner">
+            <div class="carousel-item testimonial-item active">
+              <q> <em> I was able to get an hostel in record time. <br>
+                It was easy getting to talk to the house owner <br>
+                and the whole process was seemless.</em></q> <br> <br>
+                <i class="fa fa-user"></i>
+                <p>Olauwasegun Johnson</p>
+            </div>
+            <div class="carousel-item testimonial-item">
+            <q> <em> I was able to get an hostel in record time. <br>
+                It was easy getting to talk to the house owner <br>
+                and the whole process was seemless.</em></q> <br> <br>
+                <i class="fa fa-user"></i>
+                <p>Deborah, Banks
+                   <br>                    
+                </p>
+            </div>
+            <div class="carousel-item testimonial-item">
+              <q> <em> I was able to get an hostel in record time. <br>
+                It was easy getting to talk to the house owner <br>
+                and the whole process was seemless.</em></q> <br> <br>
+                <i class="fa fa-user"></i>
+                <p>Haruna Ishola 
+                  <br>
+                </p>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      
+      <div style='text-align: center;'>
+        <img class='img-fluid' src="https://www.silverbirdsafari-africa.com/img/Domestic-Banner.png" alt="domestic-banner">
+      </div>
+      
+    
    
 
 
@@ -149,10 +196,10 @@
                           <h5 class="font-weight-bold">Quick links</h5>
                           <div class="d-flex justify-content-end">
                               <ul class="nav nav-pills flex-column mr-5   mt-1">
-                                  <li class="nav-item"><a class="nav-link p-0 " href="/">Home</a></li>
+                                  <li class="nav-item"><a class="nav-link p-0 " href="/index.html">Home</a></li>
                                   <li class="nav-item"><a class="nav-link p-0" href="/about.html">About us</a></li>
                                   <li class="nav-item"><a class="nav-link p-0 " href="/offer.html">What we offer</a></li>
-                                  <li class="nav-item"><a class="nav-link p-0" href="/terms-conditions">Terms and Conditions</a></li>
+                                  <li class="nav-item"><a class="nav-link p-0" href="#">Terms and Conditions</a></li>
                               </ul>
                           </div>
                       </div>
@@ -161,7 +208,7 @@
                           <p class=" mt-3">
                               <a href="mailto:info@madronetravel.co.ke" class="text-dark" target="__blank">Email</a>
                               <a href="/" class="text-dark d-block" target="__blank">Blog</a>
-                              <a href="" class="text-dark d-block" target="__blank">Store</a>
+                              
                           </p>
                       </div>
                       <div>
@@ -181,7 +228,8 @@
                       <div class="col-12 py-2 text-center">
                           <p class="footer-copyright">© <script>
                               document.write(new Date().getFullYear());
-                            </script> | All Rights Reserved</p>
+                            </script> | All Rights Reserved | Developed by <a href='https://linkedin.com/in/kadimakeith'>Keith Kadima</a>
+                          </p>
                       </div>
                   </div>
               </div>
@@ -211,7 +259,7 @@
                               <p>
                                   <a href="mailto:info@madronetravel.co.ke" class="text-dark">Email</a>
                                   <a href="/" target="__blank" class="text-dark d-block">Blog</a>
-                                  <a href="/" target="__blank" class="text-dark d-block">Store</a>
+                                  
                               </p>
                           </div>
                           <div>
@@ -235,9 +283,10 @@
                   <hr>
                   <div class="section-bottom">
                       <div class="col-12 py-2 text-center">
-                          <p class="footer-copyright">© <script>
-                              document.write(new Date().getFullYear());
-                            </script> | All Rights Reserved</p>
+                        <p class="footer-copyright">© <script>
+                          document.write(new Date().getFullYear());
+                        </script> | All Rights Reserved | Developed by <a href='https://linkedin.com/in/kadimakeith'>Keith Kadima</a>
+                      </p>
                       </div>
                   </div>
               </div>
@@ -288,7 +337,7 @@
       }
     },
     {
-      breakpoint: 480,
+      breakpoint: 300,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1
