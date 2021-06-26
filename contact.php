@@ -12,7 +12,8 @@ $email_from = $visitor_email;
 $email_subject = "New Form submission";
 
 $email_body = "You have received a new message from $name.\n".
-                            "Here is the message:\n $message";
+                            "Here is the message:\n $message \n".
+                            "You can contact him/her through this number:\n $phone";
 
 $to = "keithkadima@gmail.com";
 

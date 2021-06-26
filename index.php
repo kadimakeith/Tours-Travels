@@ -48,13 +48,13 @@
        <div class="collapse navbar-collapse" id='collapse_target'>
            <ul class="navbar-nav ml-auto">
                <li class="nav-item">
-                   <a href="index.html" class="nav-link">Home</a>
+                   <a href="index.php" class="nav-link">Home</a>
                </li>
                <li class="nav-item">
-                   <a href="about.html" class="nav-link">About us</a>
+                   <a href="about.php" class="nav-link">About us</a>
                </li>
                <li class="nav-item">
-                   <a href="offer.html" class="nav-link">What we offer</a>
+                   <a href="offer.php" class="nav-link">What we offer</a>
                </li>
                <li class="nav-item">
                    <a href="contact.php" class="nav-link">Contact us</a>
