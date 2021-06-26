@@ -1,7 +1,5 @@
 <?php
 
-if ($_SERVER["REQUEST_METHOD"] == "POST"){
-
 $name = $_POST['name'];
 $visitor_email = $_POST['email'];
 $message = $_POST['message'];
@@ -20,10 +18,9 @@ $to = "keithkadima@gmail.com";
 $headers = "From: $email_from \r\n";
                           
                          
-mail($to,$email_subject,$email_body,$headers)
+mail($to,$email_subject,$email_body,$headers);
 
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
