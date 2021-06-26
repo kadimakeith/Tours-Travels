@@ -7,7 +7,7 @@ $visitor_email = $_POST['email'];
 $message = $_POST['message'];
 $phone = $_POST['phone'];
 
-$email_from = $visitor_email;
+$email_from = "info@madronetravel.co.ke";
 
 $email_subject = "New Form submission";
 
@@ -20,12 +20,7 @@ $to = "keithkadima@gmail.com";
 $headers = "From: $email_from \r\n";
                           
                          
-if(mail($to,$email_subject,$email_body,$headers)) {
-  echo "Email successfully sent to $to ...";
-} else {
-  echo "Email sending failed...";
-};
-}
+mail($to,$email_subject,$email_body,$headers)
 
 ?>
 
@@ -74,16 +69,16 @@ if(mail($to,$email_subject,$email_body,$headers)) {
             <div class="collapse navbar-collapse" id='collapse_target'>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="index.php" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="about.html" class="nav-link">About us</a>
+                        <a href="about.php" class="nav-link">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a href="offer.html" class="nav-link">What we offer</a>
+                        <a href="offer.php" class="nav-link">What we offer</a>
                     </li>
                     <li class="nav-item">
-                        <a href="contact.html" class="nav-link">Contact us</a>
+                        <a href="contact.php" class="nav-link">Contact us</a>
                     </li>
                 </ul>
             </div>    
