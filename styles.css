@@ -23,7 +23,8 @@
 .leftside{
     position:fixed;
     z-index: 999;
-    top:45%;
+    top:40%;
+    right:5%;
 }
 
 .leftside li{
