@@ -5,24 +5,69 @@
     margin:0;
     padding: 0;
     font-family: 'Averta-Regular', sans-serif;
+    font-size: 14px;
+   
 }
 
-.navbar{
-    -webkit-box-shadow: 0 10px 5px #888888;
-    -moz-box-shadow: 0 10px 5px #888888;
-    box-shadow: 0 10px 5px #888888;
+.navbar{      
     color: white;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
 }
+.navbar:hover{
+    -webkit-box-shadow: 0 5px 5px #b3b2b2;
+    -moz-box-shadow: 0 5px 5px #b3b2b2;
+    box-shadow: 0 5px 5px #b3b2b2;
 
+}
+.leftside{
+    position:fixed;
+    z-index: 999;
+    top:45%;
+}
+
+.leftside li{
+    list-style-type: none;
+    padding: 20px;
+    transition: .6s;
+    color: white;
+    position: relative;
+    cursor:pointer;
+}
+.leftside ul{
+    width:70px;
+    position:absolute;
+    overflow:hidden;
+}
+.leftside li i{
+    font-size: 30px;
+}
+.leftside li:hover{
+    padding: 20px 40px;
+}
+.leftside li:nth-child(1){
+    background: #3b5998
+}
+.leftside li:nth-child(2){
+    background: #00aced
+}
+.leftside li:nth-child(3){
+    background: #007bb6
+}
 .hero1{
     height: 100px;
     width: 1200px;
 }
+.tcontainer{
+    display:flex;
+    justify-content: space-around;
+}
 .top-bar{
+    
     background: #14a9e6;
     border-bottom: 3px solid #1e61ac;
+    
+    
     
 }
 .top-bar a{
@@ -40,6 +85,9 @@
 .con{
     background-color: #14a9e6;
     filter: blur(8px);
+}
+.main-corporate > ul >li{
+    list-style-type: none;
 }
 .logo{
     width: 30vh;
@@ -100,10 +148,15 @@
     transform: translateY(-40%)
 }
 .card{
+   border: none 
+}
+.card-boxs{
     box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
 }
 .card :hover{
-    opacity: 0.8;
+    cursor: pointer;
+    color: #14a9e6;
+    
 }
 
 .overlay {
@@ -121,9 +174,7 @@
 .card :hover{
     opacity: 2;
 }
-.aboutbody{
-    padding: 30px;
-}   
+ 
 
 .wrap{
     padding: 40px
@@ -147,13 +198,22 @@
     background-repeat: no-repeat;
     height: 230px;
     object-fit: contain;
-}  
+} 
+.tourshero{
+    background-attachment: fixed;
+    background-image: url(/images/zebra.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 230px;
+    object-fit: contain;
+
+} 
 .offerhero{
     background-attachment: fixed;
     background-image: url(/images/Safari-GettyImages.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    height: 230px;
+    height: 270px;
     object-fit: contain;
 }
 
@@ -192,9 +252,7 @@
     height: 130px;
 }
 
-.cp2{
-    animation: slide2 12s linear infinite
-}
+
 
 .ci{
     margin-top: 50px;
@@ -219,38 +277,44 @@
       display: flex;
   }
 
+.row1{ 
+    display: flex;
+    justify-content: space-evenly;
 
-.cp{
-    animation : slide 13s linear infinite;
 }
-@keyframes slide {
-   
-    100% {
-        transform: translateX(-66.6666%);
+.row2{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-evenly;
+}
+.row3{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-evenly;
+}
+
+.row{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-evenly;
+}
+
+.nav-link {
+    color: black !important;
     }
-  }
-  @keyframes slide2 {
-   
-    100% {
-        transform: translateX(66.6666%);
-    }
-  }  
+
 /* For 1366 Resolution */  
 @media only screen   
 and (min-width: 1030px)   
 and (max-width: 1605px)  
 { 
-    .firstw{
-        text-align: center;
-        position: relative;
-        top: 50%;
-        -ms-transform: translateY(-50%);
-        -webkit-transform: translateY(-50%);
-        transform: translateY(-50%);
-        font-size: 20px;
-    }
+    
     .top-bar{
         height: 40px;
+    }
+    .inbound{
+        margin-left:300px;
+        margin-right:300px
     }
     
 }
@@ -276,6 +340,7 @@ and (max-width: 575px)
       }
       .top-bar{
           display: flex;
+          align-items: flex-end;
       }
       .downlogo{
           padding-bottom: 11px;
@@ -284,6 +349,27 @@ and (max-width: 575px)
       .vision-mission{
           flex-direction: column;
       }
+      .row1, .row2, .row3{
+          flex-direction: column;
+      }
+      .offerscontainer{
+          flex-direction: column;
+      }
+      .hotels{
+          flex-direction: column;
+      }
+    .navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{  display: block;  }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+     
+     
     
     
-}  
+}
+
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{  display: block;  }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+	  

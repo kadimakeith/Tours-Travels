@@ -1,35 +1,3 @@
-<?php
-
-if($_SERVER['REQUEST_METHOD'] == "POST"){
-
-
-$name = $_POST['name'];
-$visitor_email = $_POST['email'];
-$message = $_POST['message'];
-$phone = $_POST['phone'];
-
-//Validate first
-$email_from = "info@madronetravel.co.ke";
-
-$email_subject = "New Form(Contact Us) submission";
-
-$email_body = "You have received a new message from: $name. \r\n".
-               "Here is the message: \n $message \r\n".
-               "You can contact him/her through this number: $phone \r\n";
-
-$to = "info@madronetravel.co.ke";
-
-$headers = "From: $email_from \r\n";
-
-$headers .= "Reply-To: $visitor_email \r\n";
-                          
-                         
-mail($to, $email_subject, $email_body, $headers);
-
-}
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,125 +15,116 @@ mail($to, $email_subject, $email_body, $headers);
 </head>
 <body>
 
-  <div class="top-bar">
-    <div class="tcontainer">
-      <div class="top-links lftflot">
-        
-        <a href=''>&#9993; info@madronetravel.co.ke</a> | 
-        <a href="#">&#9742; +254 725 732 505 / +254 725 221 445</a>
-        <a class='text-center btn  btn-dark'style='font-size: 12px; color: white; margin-top: 3px; margin-left: 70px' data-toggle="modal" data-target="#Mailing" > Subscribe to our Newsletter</a>
-      </div>
-                
-    </div>
-    
+    <div class="top-bar">
+        <div class="container">
+          <div class="top-links lftflot">
+            <a href="">Home</a> |
+            
+            <a href="">About Us</a> |
 
-  </div>
+            <a href="">Our Profile</a> |
+
+            <a>EMAIL: info@madronetravel.co.ke</a> | 
+            <a href="#">Call Us Today on +254 725 732 505/ 725 221 445</a>|
+            <a class='text-center btn  btn-dark'style='font-size: 12px; color: white; margin-top: 3px; margin-left: 70px' data-toggle="modal" data-target="#myModal" data-query='rusinga'> Subscribe to our Newsletter</a>
+          </div>
+          
+        </div>
+      </div>
 
       <nav class='navbar navbar-expand-md navbar-light bg-white sticky-top'>
 
-<div class="container-fluid">
-   <a class="navbar-brand" href='index.html'><img src ='./images/Madrone_logo.png' class ='img-fluid logo'/></a>
-   <button class='navbar-toggler' data-toggle='collapse' type='button' data-target='#collapse_target'>
-       <span class="navbar-toggler-icon navbutton"></span>
-       
-   </button>
-   <div class="collapse navbar-collapse" id='collapse_target'>
-       <ul class="navbar-nav ml-auto">
-           <li class="nav-item">
-               <a href="index.html" class="nav-link">Home</a>
-           </li>
-           <li class="nav-item">
-               <a href="about.html" class="nav-link">About us</a>
-           </li>
-           <li class="nav-item">
-               <a href="offer.php" class="nav-link">Services</a>
-           </li>
-           <li class="nav-item dropdown">
-                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">Leisure Travel</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="tours.html"> Kenya Local Safaris</a></li>
-                  <li><a class="dropdown-item" href="#"> Inbound tours </a></li>
-                  <li><a class="dropdown-item" href="#"> Outbound tours </a></li>
-                </ul>
-            </li>
-            <li class="nav-item">
-               <a href="Corporate-travel.html" class="nav-link">Corporate Travel</a>
-           </li>
-            <li class="nav-item">
-               <a href="news.html" class="nav-link">News and Offers</a>
-           </li>
-           <li class="nav-item">
-               <a href="contact.php" class="nav-link">Contact us</a>
-           </li>
-           
-       </ul>
-   </div>    
-</div>
-      </nav>
+        <div class="container-fluid">
+           <a class="navbar-brand" href='index.html'><img src ='./images/Madrone_logo.png' class ='img-fluid logo'/></a>
+           <button class='navbar-toggler' data-toggle='collapse' type='button' data-target='#collapse_target'>
+               <span class="navbar-toggler-icon navbutton"></span>
+               
+           </button>
+           <div class="collapse navbar-collapse" id='collapse_target'>
+               <ul class="navbar-nav ml-auto">
+                   <li class="nav-item">
+                       <a href="index.html" class="nav-link">Home</a>
+                   </li>
+                   <li class="nav-item">
+                       <a href="about.html" class="nav-link">About us</a>
+                   </li>
+                   <li class="nav-item">
+                       <a href="offer.html" class="nav-link">Services</a>
+                   </li>
+                   <li class="nav-item dropdown">
+                        <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">Leisure Travel</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="tours.html"> Kenya Local Safaris</a></li>
+                          <li><a class="dropdown-item" href="#"> Inbound tours </a></li>
+                          <li><a class="dropdown-item" href="#"> Outbound tours </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a href="Corporate-travel.html" class="nav-link">Corporate Travel</a>
+                   </li>
+                    <li class="nav-item">
+                       <a href="news.html" class="nav-link">News and Offers</a>
+                   </li>
+                   <li class="nav-item">
+                       <a href="contact.php" class="nav-link">Contact us</a>
+                   </li>
+                   
+               </ul>
+           </div>    
+        </div>      
+          
+   </nav> 
 
+   <img src="" alt="">
 
-    <section class="container-fluid contacthero">
-      <div class="container text-center vertical-center">
-        <h1 style='color:#14a9e6; top:50%; font-weight: 100px; '> GET IN TOUCH WITH US </h1>
-    </div>
-        
-    </section>
-
-   
-
+    
     <section class="section contact-section" data-aos='zoom-in'>
         <div class="container">
-          <hr>
-          <p class='text-center' style='font-style:italic; font-weight: 700;'>Send us a message and one of our consultants will get back to you</p>
           <div class="row">
             <div class="col-md-7">
+
               
-              <form action="contact.php" method="post" class="bg-white p-md-5 p-4 mb-5" onsubmit="setTimeout(function(){window.location.reload();},10);">
-                <div class="row">
+              
+              <form action="form.php" method="post" class="bg-white p-md-5 p-4 mb-5 form" onsubmit="setTimeout(function(){window.location.reload();},10);">
+                <div class="row">                  
                   <div class="col-md-6 form-group">
-                    <label for="name">Name</label>
+                    <label for="name">Name:</label>
                     <input name='name' type="text" id="name" class="form-control ">
                   </div>
                   <div class="col-md-6 form-group">
-                    <label for="phone">Phone</label>
-                    <input name='phone' type="text" id="phone" class="form-control ">
+                    <label for="phone">Phone:</label>
+                    <input name='phone' type="phone" id="phone" class="form-control ">
                   </div>
                 </div>
             
                 <div class="row">
                   <div class="col-md-12 form-group">
-                    <label for="email">Email</label>
+                    <label for="email">Email:</label>
                     <input name='email' type="email" id="email" class="form-control ">
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-md-12 form-group">
-                    <label for="message">Write Message</label>
+                    <label for="hotel">Enquiry For:</label>
+                    <input name='hotel' type="text" id="hotel" class="form-control enquiry" readonly>
+                   
+                    
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 form-group">
+                    <label for="message">Enquiry details</label>
                     <textarea name="message" id="message" class="form-control " cols="30" rows="8"></textarea>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-md-12 form-group">
-                    <input type="submit" value="Send Message" class="btn btn-primary">                  </div>
+                    <input type="submit" value="Enquire" class="btn btn-primary">                  </div>
                 </div>
               </form>
   
             </div>
-            <div class="col-md-5">
-              <div class="row mt-5">
-                <div class="col-md-10 ml-auto contact-info">
-                  <br>
-                  <p><span class="d-block"> <img src="http://www.madrone-travel.com/wp-content/themes/quentin/images/social_address.png" alt=""> Address:</span> <span> P.O BOX 66832 00800</span></p>
-                  <hr>
-                  <p><span class="d-block"> <img src="http://www.madrone-travel.com/wp-content/themes/quentin/images/social_phone.png" alt=""> Phone:</span> <span> +254725221445 | +25472573205 </span></p>
-                  <hr>
-                  <p><span class="d-block"> <img src="http://www.madrone-travel.com/wp-content/themes/quentin/images/social_mail.png" alt=""> Email:</span> <span> reservations@madronetravel.co.ke</span></p>
-                  <hr>
-                  
-                </div>
-                
-              </div>
-            </div>
+            
           </div>
         </div>
       </section>
@@ -173,7 +132,6 @@ mail($to, $email_subject, $email_body, $headers);
     
     
       <footer class="footer mt-5 d-none d-md-block">
-        <hr>
         <div class="container footerContainer ">
             <div class="row mt-5">
                 <div class="col-md-12">
@@ -215,7 +173,6 @@ mail($to, $email_subject, $email_body, $headers);
                     </div>
                     <div class="section-bottom">
                         <div class="col-12 py-2 text-center">
-                            <hr>
                             <p class="footer-copyright">© <script>
                                 document.write(new Date().getFullYear());
                               </script> | All Rights Reserved | Developed by <a href='https://linkedin.com/in/kadimakeith'>Keith Kadima</a>
@@ -296,5 +253,19 @@ mail($to, $email_subject, $email_body, $headers);
 <script>
     AOS.init();
 </script>
+<script>
+  window.addEventListener('DOMContentLoaded', function(e){
 
+    const query = localStorage.getItem('query');
+
+    if(query){
+      const Enquiryquery = JSON.parse(query);
+      const form  = document.querySelector('.form');
+      const enquiry = form.querySelector('.enquiry');
+
+      enquiry.placeholder = Enquiryquery.title;
+      console.log(Enquiryquery);
+    }
+  })
+</script>
 </html>

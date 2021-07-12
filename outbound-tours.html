@@ -1,41 +1,9 @@
-<?php
-
-if($_SERVER['REQUEST_METHOD'] == "POST"){
-
-
-$name = $_POST['name'];
-$visitor_email = $_POST['email'];
-$message = $_POST['message'];
-$phone = $_POST['phone'];
-
-//Validate first
-$email_from = "info@madronetravel.co.ke";
-
-$email_subject = "New Form(Contact Us) submission";
-
-$email_body = "You have received a new message from: $name. \r\n".
-               "Here is the message: \n $message \r\n".
-               "You can contact him/her through this number: $phone \r\n";
-
-$to = "info@madronetravel.co.ke";
-
-$headers = "From: $email_from \r\n";
-
-$headers .= "Reply-To: $visitor_email \r\n";
-                          
-                         
-mail($to, $email_subject, $email_body, $headers);
-
-}
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href='./styles.css' rel='stylesheet'> 
@@ -43,137 +11,228 @@ mail($to, $email_subject, $email_body, $headers);
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/26d6c1ca75.js" crossorigin="anonymous"></script>
-    <title>Contact us</title>
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="f6046acf-82c7-4ff0-8b0a-d517cc0b3985";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+    <title>Tours</title>
 </head>
 <body>
 
-  <div class="top-bar">
-    <div class="tcontainer">
-      <div class="top-links lftflot">
-        
-        <a href=''>&#9993; info@madronetravel.co.ke</a> | 
-        <a href="#">&#9742; +254 725 732 505 / +254 725 221 445</a>
-        <a class='text-center btn  btn-dark'style='font-size: 12px; color: white; margin-top: 3px; margin-left: 70px' data-toggle="modal" data-target="#Mailing" > Subscribe to our Newsletter</a>
+    <div class="top-bar">
+        <div class="container">
+          <div class="top-links lftflot">
+            <a href="">Home  </a> |
+            
+            <a href="">About Us  </a> |
+
+            <a href="">Our Profile  </a> |
+
+            <a>EMAIL: info@madronetravel.co.ke</a> | 
+            <a>Call Us Today on +254 725 732 505/ 725 221 445</a> |
+          </div>
+          
+        </div>
       </div>
+
+    <nav class='navbar navbar-expand-md navbar-light bg-white sticky-top'>
+
+         <div class="container-fluid">
+            <a class="navbar-brand" href='index.html'><img src ='./images/Madrone_logo.png' class ='img-fluid logo'/></a>
+            <button class='navbar-toggler' data-toggle='collapse' type='button' data-target='#collapse_target'>
+                <span class="navbar-toggler-icon navbutton"></span>
                 
-    </div>
-    
-
-  </div>
-
-      <nav class='navbar navbar-expand-md navbar-light bg-white sticky-top'>
-
-<div class="container-fluid">
-   <a class="navbar-brand" href='index.html'><img src ='./images/Madrone_logo.png' class ='img-fluid logo'/></a>
-   <button class='navbar-toggler' data-toggle='collapse' type='button' data-target='#collapse_target'>
-       <span class="navbar-toggler-icon navbutton"></span>
-       
-   </button>
-   <div class="collapse navbar-collapse" id='collapse_target'>
-       <ul class="navbar-nav ml-auto">
-           <li class="nav-item">
-               <a href="index.html" class="nav-link">Home</a>
-           </li>
-           <li class="nav-item">
-               <a href="about.html" class="nav-link">About us</a>
-           </li>
-           <li class="nav-item">
-               <a href="offer.php" class="nav-link">Services</a>
-           </li>
-           <li class="nav-item dropdown">
-                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">Leisure Travel</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="tours.html"> Kenya Local Safaris</a></li>
-                  <li><a class="dropdown-item" href="#"> Inbound tours </a></li>
-                  <li><a class="dropdown-item" href="#"> Outbound tours </a></li>
+            </button>
+            <div class="collapse navbar-collapse" id='collapse_target'>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="index.php" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.php" class="nav-link">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="offer.php" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                         <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">Leisure Travel</a>
+                         <ul class="dropdown-menu">
+                           <li><a class="dropdown-item" href="#"> Kenya Local Safaris</a></li>
+                           <li><a class="dropdown-item" href="#"> Inbound tours </a></li>
+                           <li><a class="dropdown-item" href="#"> Outbound tours </a></li>
+                         </ul>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">Corporate Travel</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#"> Kenya Local Safaris</a></li>
+                          <li><a class="dropdown-item" href="#"> Inbound tours </a></li>
+                          <li><a class="dropdown-item" href="#"> Outbound tours </a></li>
+                        </ul>
+                    </li>
+                     <li class="nav-item">
+                        <a href="news.html" class="nav-link">News and Offers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.php" class="nav-link">Contact us</a>
+                    </li>
+                    
                 </ul>
-            </li>
-            <li class="nav-item">
-               <a href="Corporate-travel.html" class="nav-link">Corporate Travel</a>
-           </li>
-            <li class="nav-item">
-               <a href="news.html" class="nav-link">News and Offers</a>
-           </li>
-           <li class="nav-item">
-               <a href="contact.php" class="nav-link">Contact us</a>
-           </li>
+            </div>    
+         </div>      
            
-       </ul>
-   </div>    
-</div>
-      </nav>
+    </nav> 
 
+    <section class="container-fluid tourshero">        
 
-    <section class="container-fluid contacthero">
-      <div class="container text-center vertical-center">
-        <h1 style='color:#14a9e6; top:50%; font-weight: 100px; '> GET IN TOUCH WITH US </h1>
-    </div>
+    </section>
+
+    </section>
+
+    <section style='text-align: center; margin: 50px'>
+        <h2 class='sec-title'>INBOUND TOURS</h2>
+        <h1>Planning your Perfect Safari</h1>
+        <p> Once you take an African Safari in Kenya, you will agree and appreciate this region is a great destination for not just a safari but some other exciting experiences.<br>
+            Our tours include adventure safaris from Nairobi to the parks in Kenya like Aberdares. Parks in Tanzania, <br>
+            Uganda and Rwanda
+        </p>
+        <br>
+        <p>You can have a relaxing experience by taking a weekend away from the busy schedule of life through our weekend getaways. For the adrenaline junkies <br>
+           we have several activities that you can take through our sports tours. If you love hiking or mountain climbing, we have itineraries that you can br
+           engage in. For nature lovers, you can take a walk or have a guided tour through the forest or natural trails.
+        </p>  
+        <br>
+        <p>At Madrone Tours and Travel, we believe there is something locally that a person of any interest can do. The young and the old, the introverted <br>
+           and the extroverted. All you need to do is join us in this adventure as we tembea Kenya. Hakuna Matata!   </p>  
+
+    </section>
+
+    <section style='text-align: center; margin: 50px'>
+        <div class="row1">
+            <div class="col-sm-3">
+                <div class="card" data-aos="fade-up">
+                    <img class='card-img-top' style='height: 290px;' src='./images/motel.jpg'/>                        
+                    <div class="card-body">
+                        <h4 class="card-title text-center" >Getaways</h4>
+                        <a class='text-center btn btn-block btn-dark'style='font-size: 12px; color: white;'> READ MORE</a>
+                        <a class='text-center btn btn-block btn-dark'style='font-size: 12px; color: white;' data-toggle="modal" data-target="#myModal"> ENQUIRE</a>
+                    </div> 
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" data-aos="fade-up">
+                    <img class='card-img-top' style='height: 290px;' src='./images/motel.jpg'/>                        
+                    <div class="card-body">
+                        <h4 class="card-title text-center" >Sports Tours</h4>
+                        <a class='text-center btn btn-block btn-dark'style='font-size: 12px; color: white;'> READ MORE</a>
+                        <a class='text-center btn btn-block btn-dark'style='font-size: 12px; color: white;' data-toggle="modal" data-target="#myModal"> ENQUIRE</a>
+                    </div> 
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" data-aos="fade-up">
+                    <img class='card-img-top' style='height: 290px;' src='./images/motel.jpg'/>                        
+                    <div class="card-body">
+                        <h4 class="card-title text-center" >Zip Lining</h4>
+                        <a class='text-center btn btn-block btn-dark'style='font-size: 12px; color: white;'> READ MORE</a>
+                        <a class='text-center btn btn-block btn-dark'style='font-size: 12px; color: white;' data-toggle="modal" data-target="#myModal"> ENQUIRE</a>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="col-sm-3">
+                <div class="card" data-aos="fade-up">
+                    <img class='card-img-top' style='height: 290px;' src='./images/motel.jpg'/>                        
+                    <div class="card-body">
+                        <h4 class="card-title text-center" >Chimpanzee Sanctuary Tour</h4>
+                        <a class='text-center btn btn-block btn-dark'style='font-size: 12px; color: white;'> READ MORE</a>
+                        <a class='text-center btn btn-block btn-dark'style='font-size: 12px; color: white;' data-toggle="modal" data-target="#myModal"> ENQUIRE</a>
+                    </div> 
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" data-aos="fade-up">
+                    <img class='card-img-top' style='height: 290px;' src='./images/motel.jpg'/>                        
+                    <div class="card-body">
+                        <h4 class="card-title text-center" >Domestic Flying Packages</h4>
+                        <a class='text-center btn btn-block btn-dark'style='font-size: 12px; color: white;'> READ MORE</a>
+                        <a class='text-center btn btn-block btn-dark'style='font-size: 12px; color: white;'  data-toggle="modal" data-target="#myModal"> ENQUIRE</a>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="row3">
+            <div class="col-sm-3">
+                <div class="card" data-aos="fade-up" style='border: 0;'>
+                    <img class='card-img-top' style='height: 290px;' src='./images/motel.jpg'/>                        
+                    <div class="card-body">
+                        <h4 class="card-title text-center" >White water rafting tour</h4>
+                        <a class='text-center btn btn-block btn-dark'style='font-size: 12px; color: white;'> READ MORE</a>
+                        <a class='text-center btn btn-block btn-dark'style='font-size: 12px; color: white;' data-toggle="modal" data-target="#myModal"> ENQUIRE</a>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+            
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header" style='display: flex; justify-content: space-between'>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="form.php" method="post" class="bg-white p-md-5 p-4 mb-5" onsubmit="setTimeout(function(){window.location.reload();},10);">
+                        <div class="row">
+                          <div class="col-md-6 form-group">
+                            <label for="name">Name</label>
+                            <input name='name' type="text" id="name" class="form-control ">
+                          </div>
+                          <div class="col-md-6 form-group">
+                            <label for="phone">Phone</label>
+                            <input name='phone' type="text" id="phone" class="form-control ">
+                          </div>
+                        </div>
+                    
+                        <div class="row">
+                          <div class="col-md-12 form-group">
+                            <label for="email">Email</label>
+                            <input name='email' type="email" id="email" class="form-control ">
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12 form-group">
+                            <label for="message">Write Message</label>
+                            <textarea name="message" id="message" class="form-control " cols="30" rows="8"></textarea>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6 form-group">
+                            <input type="submit" value="Send Message" class="btn btn-primary">                  </div>
+                        </div>
+                      </form>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+            
+            </div>
+  </div>
         
     </section>
 
-   
 
-    <section class="section contact-section" data-aos='zoom-in'>
-        <div class="container">
-          <hr>
-          <p class='text-center' style='font-style:italic; font-weight: 700;'>Send us a message and one of our consultants will get back to you</p>
-          <div class="row">
-            <div class="col-md-7">
-              
-              <form action="contact.php" method="post" class="bg-white p-md-5 p-4 mb-5" onsubmit="setTimeout(function(){window.location.reload();},10);">
-                <div class="row">
-                  <div class="col-md-6 form-group">
-                    <label for="name">Name</label>
-                    <input name='name' type="text" id="name" class="form-control ">
-                  </div>
-                  <div class="col-md-6 form-group">
-                    <label for="phone">Phone</label>
-                    <input name='phone' type="text" id="phone" class="form-control ">
-                  </div>
-                </div>
+    
+
+   
+  
             
-                <div class="row">
-                  <div class="col-md-12 form-group">
-                    <label for="email">Email</label>
-                    <input name='email' type="email" id="email" class="form-control ">
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12 form-group">
-                    <label for="message">Write Message</label>
-                    <textarea name="message" id="message" class="form-control " cols="30" rows="8"></textarea>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12 form-group">
-                    <input type="submit" value="Send Message" class="btn btn-primary">                  </div>
-                </div>
-              </form>
-  
-            </div>
-            <div class="col-md-5">
-              <div class="row mt-5">
-                <div class="col-md-10 ml-auto contact-info">
-                  <br>
-                  <p><span class="d-block"> <img src="http://www.madrone-travel.com/wp-content/themes/quentin/images/social_address.png" alt=""> Address:</span> <span> P.O BOX 66832 00800</span></p>
-                  <hr>
-                  <p><span class="d-block"> <img src="http://www.madrone-travel.com/wp-content/themes/quentin/images/social_phone.png" alt=""> Phone:</span> <span> +254725221445 | +25472573205 </span></p>
-                  <hr>
-                  <p><span class="d-block"> <img src="http://www.madrone-travel.com/wp-content/themes/quentin/images/social_mail.png" alt=""> Email:</span> <span> reservations@madronetravel.co.ke</span></p>
-                  <hr>
-                  
-                </div>
-                
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-  
+           
     
     
       <footer class="footer mt-5 d-none d-md-block">
-        <hr>
         <div class="container footerContainer ">
             <div class="row mt-5">
                 <div class="col-md-12">
@@ -215,7 +274,6 @@ mail($to, $email_subject, $email_body, $headers);
                     </div>
                     <div class="section-bottom">
                         <div class="col-12 py-2 text-center">
-                            <hr>
                             <p class="footer-copyright">© <script>
                                 document.write(new Date().getFullYear());
                               </script> | All Rights Reserved | Developed by <a href='https://linkedin.com/in/kadimakeith'>Keith Kadima</a>
@@ -297,4 +355,6 @@ mail($to, $email_subject, $email_body, $headers);
     AOS.init();
 </script>
 
+    
+</body>
 </html>

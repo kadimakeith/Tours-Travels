@@ -11,32 +11,29 @@
     <link href='./styles.css' rel='stylesheet'> 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/> 
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">    
+    <link rel="stylesheet" type="text/css" href="glider.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/26d6c1ca75.js" crossorigin="anonymous"></script>
-
-    <title>Madrone Tours and Travels </title>
+    <script src="glider.js"></script>
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="f6046acf-82c7-4ff0-8b0a-d517cc0b3985";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+    <title>Madrone Travel | Adventure awaits, We help you find it </title>
 </head>
 <body>
-
-
+  
   <div class="top-bar">
-    <div class="container">
+    <div class="tcontainer">
       <div class="top-links lftflot">
-        <a href="">Home </a> |
         
-        <a href="">About Us </a> |
-
-        <a href="">Our Profile </a> |
-
-        <a>EMAIL: info@madronetravel.co.ke</a> | 
-        <a href="#">Call Us Today on +254 725 732 505 / 725 221 445</a>|
+        <a href=''>&#9993; info@madronetravel.co.ke</a> | 
+        <a href="#">&#9742; +254 725 732 505 / +254 725 221 445</a>
+        <a class='text-center btn  btn-dark'style='font-size: 12px; color: white; margin-top: 3px; margin-left: 70px' data-toggle="modal" data-target="#Mailing" > Subscribe to our Newsletter</a>
       </div>
-      
+                
     </div>
-  </div>
+    
 
+  </div>
   <nav class='navbar navbar-expand-md navbar-light bg-white sticky-top'>
 
     <div class="container-fluid">
@@ -48,22 +45,38 @@
        <div class="collapse navbar-collapse" id='collapse_target'>
            <ul class="navbar-nav ml-auto">
                <li class="nav-item">
-                   <a href="index.php" class="nav-link">Home</a>
+                   <a href="index.html" class = "nav-link">Home</a>
                </li>
                <li class="nav-item">
-                   <a href="about.php" class="nav-link">About us</a>
+                   <a href="about.html" class = "nav-link">About us</a>
                </li>
                <li class="nav-item">
-                   <a href="offer.php" class="nav-link">What we offer</a>
+                   <a href="offer.html" class = "nav-link">Services</a>
+               </li>
+               <li class="nav-item dropdown">
+                    <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">Leisure Travel</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="tours.html"> Kenya Local Safaris</a></li>
+                      <li><a class="dropdown-item" href="inbound-tours.html"> Inbound tours </a></li>
+                      <li><a class="dropdown-item" href="outbound-tours.html"> Outbound tours </a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="Corporate-travel.html" class="nav-link">Corporate Travel</a>
+              </li>
+                <li class="nav-item">
+                   <a href="news.html" class="nav-link">News and Offers</a>
                </li>
                <li class="nav-item">
                    <a href="contact.php" class="nav-link">Contact us</a>
                </li>
+               
            </ul>
        </div>    
     </div>      
       
 </nav> 
+
 
     <div id="myCarousel" class="carousel" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -107,78 +120,239 @@
       </a>
     </div>
 
+    <div class="leftside">
+      <ul>
+        <li> 
+          <i class='fa fa-facebook'></i>
+        </li>
+        <li> 
+          <i class='fa fa-twitter'></i>
+        </li>
+        <li> 
+          <i class='fa fa-linkedin'></i>
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <div class="modal fade" id="Mailing" role="dialog">
+          <div class="modal-dialog">
+          
+          <!-- Modal content-->
+          <div class="modal-content">
+              <div class="modal-header" style='display: flex; justify-content: space-between'>
+                  Join our Mailing List
+              </div>
+               <form action="form.php" method="post" class="bg-white p-md-5 p-4 mb-5 form" onsubmit="setTimeout(function(){window.location.reload();},10);">
+                <div class="row">                  
+                  <div class="col-md-12 form-group">
+                    <label for="name">Name</label>
+                    <input name='name' type="text" id="name" class="form-control ">
+                  </div>
+                </div>
+            
+                <div class="row">
+                  <div class="col-md-12 form-group">
+                    <label for="email"> &#9993; Email</label>
+                    <input name='email' type="email" id="email" class="form-control ">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 form-group">
+                    
+                                      
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 form-group">
+                    <input type="submit" value="Join" class="btn btn-primary">
+                  </div>
+                </div>
+              </form>
+                                    
+              <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+          </div>
+          
+          </div>
+          </div>
+          </div>
+          </div>
+
 <!--Membership-->
-    <div class="container">
-        <h3 class="text-center">Partnerships</h3>
-    </div>
-    <div class="multiple-items">
-      <div>
-          <img  class ='cp' src="./images/KWSS_2_1.png" alt="KWS">
+<div class="hotel-container">
+  <hr>
+  <h2 class="text-center" STYLE='color: blue; font-size: 18px;'>Our Best Selling Packages</h2>
+  <hr>
+  <div class="hotels" style='display: flex;'>
+      <div class="col-sm-3">
+        <div class="card" data-aos="zoom-in-up">
+            <img class='card-img-top' style='height: 290px;' src='./images/Saruni.jpg' />                        
+            <div class="card-body">
+                <h4 class="card-title text-center" >Saruni Rhino</h4>
+                <p class = 'text-center'> &#9758; KES 89,560.00</p>
+                <p class = 'text-center'> &#9758; Return flights from Nairobi</p>
+                <p class = 'text-center'> &#9758; Airstrip transfers</p>
+                <p class = 'text-center'> &#9758; Shared game drives</p>
+                <hr>
+                <p class = 'text-center' style='color: blue; font-size: 12px'> &#128337; 7/6/2021 - 9/10/2021</p>
+                <br>
+                <a class='text-center btn btn-block btn-dark'style='font-size: 12px; color: white; margin-top:4px'  data-query='Saruni'> ENQUIRE</a>
+            </div> 
+        </div>
       </div>
-      <div>
-          <img  class ='cp' src="./images/Magical-kenya-tourism-identity.png" alt="Magical Kenya">
+    
+
+    
+        <div class="col-sm-3">
+          <div class="card" data-aos="zoom-in-up">
+              <img class='card-img-top' style='height: 290px;' src='./images/Diani-flying-package-5-900x500.jpg'/>                        
+              <div class="card-body">
+                  <h4 class="card-title text-center" >The Maji Beach Boutique, Diani</h4>
+                  <p class = 'text-center'> &#9758; KES 74,000.00</p>
+                  <p class = 'text-center'> &#9758; Return flights from Nairobi</p>
+                  <p class = 'text-center'> &#9758; 2 nights half board accommodation</p>
+                  <p class = 'text-center'> &#9758; A bottle of wine per stay</p>
+                  <hr>
+                  <p class = 'text-center' style='color: blue; font-size: 12px'> &#128337; 7/6/2021 - 9/10/2021</p>
+                  <a class='text-center btn btn-block btn-dark'style='font-size: 12px; color: white;'  data-query='Maji'> ENQUIRE</a>
+              </div> 
+          </div>
+        </div>
+    
+
+    
+      <div class="col-sm-3">
+        <div class="card" data-aos="zoom-in-up">
+            <img class='card-img-top' style='height: 290px;' src='./images/entim.jpg'/>                        
+            <div class="card-body">
+                <h4 class="card-title text-center" >Entim Camp, Maasai Mara</h4>
+                <p class = 'text-center'> &#9758; KES 73,150.00</p>
+                <p class = 'text-center'> &#9758; Return flights from Nairobi</p>
+                <p class = 'text-center'> &#9758; Airstrip transfers</p>
+                <p class = 'text-center'> &#9758; 2 nights full board accommodation</p>
+                <hr>
+                <p class = 'text-center' style='color: blue; font-size: 12px'> &#128337; 7/6/2021 - 9/10/2021</p>
+                <br>
+                <a class='text-center btn btn-block btn-dark'style='font-size: 12px; color: white; margin-top:3px'  data-query='Entim'> ENQUIRE</a>
+                
+            </div> 
+        </div>
       </div>
-      <div>
-          <img  class ='cp' src="./images/NatureKenya-Logo-125.png" alt="Nature Kenya">
-      </div>
-      <div>
-          <img  class ='cp' src="./images/ASTA.png" alt="ASTA">
-      </div>
-      
-    </div>
-    <div class="row">
-      
-      <div class="col-md-12">
-        <img class='cp2' src="./images/partners.png"> 
+    
+    
+      <div class="col-sm-3">
+        <div class="card" data-aos="zoom-in-up">
+            <img class='card-img-top' style='height: 290px;' src='./images/Jacaranda.jpg'/>                        
+            <div class="card-body">
+                <h4 class="card-title text-center" >Jacaranda Beach Resort</h4>
+                <p class = 'text-center'> &#9758; KES 42,100.00</p>
+                <p class = 'text-center'> &#9758; Return flights from Nairobi</p>
+                <p class = 'text-center'> &#9758; Airport transfers in Diani</p>
+                <p class = 'text-center'> &#9758; 3 nights half board accommodation</p>
+                <hr>
+                <p class = 'text-center' style='color: blue; font-size: 12px'> &#128337; 7/6/2021 - 9/10/2021</p>
+                <br>
+                <a class='text-center btn btn-block btn-dark'style='font-size: 12px; color: white; margin-top:3px'  data-query='Jacaranda'>ENQUIRE</a>
+            </div> 
+        </div>
       </div>   
-           
-      </div>
+    
+</div>
 
+    
+     <div class= 'offerscontainer' style='display: flex; margin:20px;' >
+        
 
-      <div class="container testimonial">
+      <div class="container testimonial" style='background-color: rgb(238, 234, 234);' data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine">
+       
+        
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
           
           <div class="carousel-inner">
-            <div class="carousel-item testimonial-item active">
-              <q> <em> I was able to get an hostel in record time. <br>
-                It was easy getting to talk to the house owner <br>
-                and the whole process was seemless.</em></q> <br> <br>
+              
+              <div class="carousel-item testimonial-item active">
+                
+                <q> <em>We were amazed at the professionalism exhibited by the staff.<br>
+                        we wish to let you know that that our holiday was fantastic, we were very happy to visit your country and <br>
+                        we would like to come back again in the near future. Thank you very much.                      
+                    </em>
+                </q>
+                <br>
                 <i class="fa fa-user"></i>
-                <p>Olauwasegun Johnson</p>
+                <p>Carol Mish</p>
+              </div>
+            
+            
+            <div class="carousel-item testimonial-item">
+                <q> 
+                  <em>
+                  The tour and services offered by Madrone were Excellent.<br>
+                  The response to our enquiry was prompt and the information we were given was complete.                   
+                  </em>
+                </q>
+                  <br>
+                <i class="fa fa-user"></i>
+                <p>Steve Kagondu</p>
             </div>
             <div class="carousel-item testimonial-item">
-            <q> <em> I was able to get an hostel in record time. <br>
-                It was easy getting to talk to the house owner <br>
-                and the whole process was seemless.</em></q> <br> <br>
-                <i class="fa fa-user"></i>
-                <p>Deborah, Banks
-                   <br>                    
-                </p>
-            </div>
-            <div class="carousel-item testimonial-item">
-              <q> <em> I was able to get an hostel in record time. <br>
-                It was easy getting to talk to the house owner <br>
-                and the whole process was seemless.</em></q> <br> <br>
+              <q> <em>Thank you for facilitating my travels last year. <br>
+                      You are officially my go to person for my travels this year and I will also gladly <br>
+                      put in a word to any one looking for a reliably able agent for bookings.</em></q> <br>
                 <i class="fa fa-user"></i>
                 <p>Haruna Ishola 
                   <br>
                 </p>
             </div>
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
+          
         </div>
       </div>
       
-      <div style='text-align: center;'>
-        <img class='img-fluid' src="https://www.silverbirdsafari-africa.com/img/Domestic-Banner.png" alt="domestic-banner">
+      <div style='display:flex; flex-direction:column; margin-left: 8px; margin-top: 30px' data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-back"
+      data-aos-delay="300"
+      data-aos-offset="0">
+        <a href='inbound-tours.html'>
+          <img class='img-fluid' src="./images/Inbound-banner.png" alt="Inbound-banner">
+        </a>
+        <a href='news.html'>
+          <img style='margin-top:2px;' class='img-fluid' src="./images/Domestic-Banner.png" alt="domestic-banner">
+        </a>         
       </div>
+      </div>
+
+    <div class="container">
+      <hr>
+        <p class="text-center" style='font-size:19px; color:blue;'>Our Partners</p>
+      <hr>    
+    </div>
+    <div class='glider-contain'>
+      <div class="glider">
+        <div>
+            <img  src="./images/KWSS_2_1.png" alt="KWS">
+        </div>
+        <div>
+            <img src="./images/Magical-kenya-tourism-identity.png" alt="Magical Kenya">
+        </div>
+        <div>
+            <img src="./images/NatureKenya-Logo-125.png" alt="Nature Kenya">
+        </div>
+        <div>
+            <img  class ='cp' src="./images/ASTA.png" alt="ASTA">
+        </div>
+  
+             
+      </div>
+
+     
+      <div role="tablist" class="dots"></div> 
+             
+      </div>
+    </div>
       
     
    
@@ -186,6 +360,7 @@
 
   <footer class="footer mt-5 d-none d-md-block">
       <div class="container footerContainer ">
+          <hr>
           <div class="row mt-5">
               <div class="col-md-12">
                   <div class="d-flex justify-content-between">
@@ -225,6 +400,7 @@
                       </div>
                   </div>
                   <div class="section-bottom">
+                      <hr>
                       <div class="col-12 py-2 text-center">
                           <p class="footer-copyright">© <script>
                               document.write(new Date().getFullYear());
@@ -241,6 +417,8 @@
 
   <footer class="d-md-none d-block">
       <div class="container-fluid">
+        
+          <hr>
           <div class="row">
               <div class="col-12">
                   <div class="row mobile-footer">
@@ -282,6 +460,7 @@
                   </div>
                   <hr>
                   <div class="section-bottom">
+                      <hr>
                       <div class="col-12 py-2 text-center">
                         <p class="footer-copyright">© <script>
                           document.write(new Date().getFullYear());
@@ -310,47 +489,51 @@
    }); 
  </script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script type="text/javascript" src="slick/slick.min.js"></script>
+
 <script>
-    $(document).ready(function(){
-        $('.multiple-items').slick({
-  
-  infinite: true,
-  speed: 200,
-  slidesToShow: 4,
-  slidesToScroll: 4,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 300,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-    
-  ]
-});
-        });
-  
+    window.addEventListener('load', function(){
+    new Glider(document.querySelector('.glider'), {
+      // Mobile-first defaults
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      draggable: true,
+      dots: '.dots',
+      
+  })
+
+  });
+
 </script>
 <script>
     AOS.init();
+</script>
+<script>
+  window.addEventListener('DOMContentLoaded', function(e){
+      console.log('loaded');
+      const querybuttons = document.querySelectorAll("a[data-query]");
+
+      querybuttons.forEach(function(button){
+          button.addEventListener("click" , function(e){
+              const button = e.currentTarget;
+              const container = button.parentNode;
+              
+              
+              const query = {
+                  id: button.getAttribute('data-query'),
+                  title: container.querySelector('.card-title').innerText,
+                 
+              };
+
+              console.log(query);
+              localStorage.setItem('query' , JSON.stringify(query));
+
+              const url = window.location.href.replace('index' , 'bookingform')
+
+              window.location.href = url;
+              
+          })
+      })
+  })
 </script>
 
 </html>
