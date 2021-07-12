@@ -59,8 +59,8 @@
     font-size: 30px;
 }
 .leftside li:hover{
-    padding: 20px 40px;
-}
+    padding: 20px 90px 25px 9px;
+  }
 .leftside li:nth-child(1){
     background: #3b5998
 }
