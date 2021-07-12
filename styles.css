@@ -24,7 +24,8 @@
     position:fixed;
     z-index: 999;
     top:40%;
-    right:5%;
+    right:59px;git
+    
 }
 
 .leftside li{
@@ -317,6 +318,7 @@ and (max-width: 1605px)
         margin-left:300px;
         margin-right:300px
     }
+    .leftside{}
     
 }
 
@@ -339,6 +341,7 @@ and (max-width: 575px)
         text-shadow: 1px 1px 10px #000;
         font-family: 'Odibee Sans', cursive;
       }
+      
       .top-bar{
           display: flex;
           align-items: flex-end;
